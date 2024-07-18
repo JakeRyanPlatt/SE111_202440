@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--the head holds important info for the browser to-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Author" content="Jake Platt">
+    <meta name="description" content="Week 1 Demo">
+
+    <title>W1 | Demo</title>
+</head>
+<body>
+    <!--The biody holds all content for the page -->  
+    <!--this is a comment in HTML-->
+
+    <!-- heading tags are Block Level Elements (BLEs)-->
+    <!--BLEs create structure for page- they are literal blocks / rectanges: start on a new left hand aligned line--->
+    <h1>Heading 1</h1> <!--One h1 per page; content supports SEO (Search Engine Optimization)-->
+    <h2 style="border:1px solid red;">Heading 2</h2>
+    <h3 style="border:1px solid rgb(140, 39, 170);">Heading 3</h3>
+    <h4 style="border:1px solid rgba(6, 223, 17, 0.589);">Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!--Horizontal rule - self closing; spits out a BLE line-->
+    <hr>
+
+
+
+
+
+    <!--LISTS! we have ordered (numbered) and unordered (bulleted)-->
+    <!--lists require: a type of list AND list items-->
+
+    <h2>Favorite Dragons</h2>
+
+    <ol><!--ordered list type-->
+        <li>Drogon</li>
+        <li>Syrax</li>
+        <li>Moondancer</li>
+        <li>Vermithor</li>
+        <li>Cannibal</li>
+    </ol>
+
+    <h2>My Hobbies</h2>
+
+    <ul><!--Unordered list type-->
+        <li>Hanging with my Bros</li>
+        <li>Warhammer 40k</li>
+        <li>Cooking straight HEAT</li>
+        <li>Beach</li>
+        <li>Consuming content slop like a pig</li>
+    </ul>
+
+    <hr>
+
+    <h2>Paragrapgh Tags - For body text content</h2>
+        
+    <p>Hello World? This is my first paragraph tag! AHHHHHHHHHHHHHHHHH fun AHHHHHHHHHHHH VSC AHHHHHHHHHHHH windows AHHHHHHHHHHH I LOVE MICROSOFT! SUCH A GOOD COMPANY VERY COOL OPERATING SYSTEM YAY
+        
+        <br> <!--Break space; creates a new line-->
+        <br>
+        <br><br><br>
+    ahjfkdshgjfdhjkfdshjkghfdgjkhfdjsghfdjkhgjkfdhgfdhgkjsfdhgljkfds</p>
+
+        <hr>
+
+        <h2>Divs - divs (divisions/dividers) create sections of content; they ONLY hold *other HTML elements*(never text content on its own)</h2>
+
+        <div style="border:1px solid green; background-color:black;font-family:'Times New Roman', Times, serif;color:black;">
+            <h4>About Me</h4>
+            <p>Hi my name is <u>Jake</u> and I <i>enjoy</i> <b>coffee</b></p>
+
+        </div>
+
+        <hr>
+
+         <!--IMAGES! are considered Both inline AND block level XD-->
+         <!--we will primarily use them as BLEs-->
+        <img src="https://i.imgur.com/2rtOX4S.jpg" alt="Airship time its over for you pal" width="500">
+        <!--Above is an example of an ABSOLUTE image path [boooo!]-->
+     
+        <!--relative file paths are best! they live directly within the root folder-->
+        <img src="images/GUEST_3dff65cb-40a4-4338-a974-d40c119cbec4.jpg" alt="Nuns with guns" width="500">
+
+
+        <!--IMG requires 2 attributes:
+        Images are both considered inline and block 
+        *src > file path to image
+        *alt > alternative text: what is read on screenreaders, supports SEO< and appears f file path is broken-->
+    
+        <hr>
+
+        <h2>Hypertext Links</h2>
+   
+        <p>Hypertxt links give us acces to <a href="https://www.google.com">other pages!</a> They are known as the <i>anchor</i> tag.</p>
+
+
+</body>
+</html>
