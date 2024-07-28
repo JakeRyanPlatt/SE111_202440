@@ -6,10 +6,105 @@
     <meta name="author" content="Jake" >
     <meta name="description" content="W2 Bio " >
 
-    <title>Document</title>
-    <h1>Jake Platt</h1>
+    <title>Jake's Bio</title>
+    <h1 id="header"><b>Jake Platt - My Bio</b></h1>
+
+    <style>
+    /*in here we write CSS*/
+    
+
+    /*SELECTION in CSS and JS: Select spefific selement(s) on a page
+
+    *by ELEMENT type ex: body, div, p
+    *by ID attribute ex:#wrapper, #nav, #footer, #title
+    *by CLASS attribute ex: coming in week 3
+
+    */
+
+    div {
+        border:1px solid black;
+        padding:10px; /*adds space between content and border*/
+        margin:10px; /*adds space between an elements border*/
+        background-color:rgb(52, 82, 82);
+
+
+    }
+ 
+    #wrapper {
+
+        background-color: black;
+
+    }
+
+
+    #nav, #footer {
+
+        background-color:rgb(128, 0, 11);
+
+    }
+</style>
+
 </head>
+
 <body>
     
+    <div id="nav">
+        <a href="#bio">Bio</a>
+        <a href="#schooling">Schooling</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#footer">Footer</a>
+
+    </div>
+<!--Here is the About Me section-->
+    <div id="bio">
+        <h2>About Me</h2>
+            <p>I am a Cyber Secruity and Networking student with a specific interest in malware analysis and reverse engineering. When I'm not doing schoolwork I'm either cooking, spending time with my girlfriend, or at my local game store playing Warhammer 40k or warhammer Age of Sigmar. Other activities I do suppratically are playing videogames, training muay thai (been away for a while), and hiking. </p>
+    </div>
+<hr>
+<!--Here is the Schooling section-->
+    <div id="schooling">
+        <h2>Schooling</h2>
+            <p>Here I will include at least three schools and utilize an ordered numbered list</p>
+            <ol>
+            <li>Blackstone Valley Tech</li>
+            <li>Columbia Southern University</li>
+            <li>New England Institute of Technology</li>
+            </ol>
+    </div>
+<hr>
+<!--Here is the Hobbies section-->
+    <div id="hobbies">
+        <h2>Hobbies</h2>
+            <p>For the hobbies section I need to include at least three interest and utilize a unordered list and one image</p>
+
+            <ul>
+                <li>Muay Thai</li>
+                <li>Warhammer</li>
+                <li>Cooking</li>
+            </ul>
+
+
+        <div id="muaythai">
+            <img src="images/muaythai.bmp" alt="two men fighting inside of a muay thai boxing ring" width="500" style="display:inline-block;">
+            <h3> <a href="https://www.andradamuaythai.com/" target="_blank">Andrada Muay Thai</a><br></h3>
+        </div>
+        <div id="gw">
+            <img src="images/sgl.bmp" alt="Soulblight Gravelord miniture models" width="500" style="display:inline-block;">
+            <h3> <a href="https://www.warhammer-community.com/2024/06/14/warhammer-age-of-sigmar-faction-focus-soulblight-gravelords/" target="_blank">Soulblight Gravelords</a><br></h3>
+        </div>
+        <div id="cooking">
+            <img src="images/cooking.bmp" alt="a wooden spoon stirring vegetables inside a skillet" width="500" style="display:inline-block;">
+            <h3> <a href="http://www.kenjilopezalt.com/" target="_blank">Cooking</a>
+        </div>
+        
+           
+            
+    </div>
+
+    <div id="footer">
+        <br>
+        <h3> <a href="../w2-bio/index.html"><i>Back to Top</i></a></h3>
+        <p>&copy; 2024 | Jake | SE111 [202440]</p><br>
+    </div>
 </body>
 </html>
