@@ -7,7 +7,7 @@
     <meta name="description" content="W2 Bio " >
 
     <title>Jake's Bio</title>
-    <h1 id="header"><b>Jake Platt - My Bio</b></h1>
+    <h1 id="header"><strong>Jake Platt - My Bio</strong></h1>
 
     <style>
     /*in here we write CSS*/
@@ -42,23 +42,35 @@
         background-color:rgb(128, 0, 11);
 
     }
+
+    .g-block {
+        min-width:550px;
+        border:none;
+        float:left;
+        text-align:center;
+    }
 </style>
+
+<!--Jake Section ID 7/29/2024 -->
 
 </head>
 
 <body>
     
     <div id="nav">
-        <a href="#bio">Bio</a>
-        <a href="#schooling">Schooling</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#footer">Footer</a>
+        <a href="#bio"><b>Bio</b></a>
+        <a href="#schooling"><b>Schooling</b></a>
+        <a href="#hobbies"><b>Hobbies</b></a>
+        <a href="#footer"><b>Footer</b></a>
 
     </div>
 <!--Here is the About Me section-->
     <div id="bio">
-        <h2>About Me</h2>
+        <h2><em>About Me</em></h2>
             <p>I am a Cyber Secruity and Networking student with a specific interest in malware analysis and reverse engineering. I grew up in Millville Massachusetts until I was 18 and joined the Air Force. From there I was primarily stationed in Las Vegas, Nevada. After my 6 year contract I moved back to Massachusetts to change my career and finish my degree in cyber secrurity and network engineering.  </p>
+
+        <img src="images/me.jpg" alt="picture of Jake wearing a sweatshirt infront of some outdoor lights" width="500" style="display:inline-block;">
+
     </div>
 <hr>
 <!--Here is the Schooling section-->
@@ -84,24 +96,29 @@
             </ul>
 
 
-        <div id="muaythai">
-            <img src="images/muaythai.bmp" alt="two men fighting inside of a muay thai boxing ring" width="500" style="display:inline-block;">
-            <h3> <a href="https://www.andradamuaythai.com/" target="_blank">Andrada Muay Thai</a><br></h3>
-        </div>
-        <div id="gw">
-            <img src="images/sgl.bmp" alt="Soulblight Gravelord miniture models" width="500" style="display:inline-block;">
-            <h3> <a href="https://www.warhammer-community.com/2024/06/14/warhammer-age-of-sigmar-faction-focus-soulblight-gravelords/" target="_blank">Soulblight Gravelords</a><br></h3>
-        </div>
-        <div id="cooking">
-            <img src="images/cooking.bmp" alt="a wooden spoon stirring vegetables inside a skillet" width="500" style="display:inline-block;">
-            <h3> <a href="http://www.kenjilopezalt.com/" target="_blank">Cooking</a>
-        </div>
-        
+            <div id="gallery" style ="border:none;">
+                <div id="muaythai" class="g-block">
+                    <img src="images/muaythai.bmp" alt="two men fighting inside of a muay thai boxing ring" height="500" style="display:inline-block;">
+                    <h3> <a href="https://www.andradamuaythai.com/" target="_blank">Andrada Muay Thai</a><br></h3>
+                </div>
+                
+                <div id="cooking" class="g-block">
+                    <img src="images/cooking.bmp" alt="a wooden spoon stirring vegetables inside a skillet" height="500" style="display:inline-block;">
+                    <h3> <a href="http://www.kenjilopezalt.com/" target="_blank">Cooking</a>
+                </div>
+
+                <div id="gw" class="g-block">
+                    <img src="images/sgl.bmp" alt="Soulblight Gravelord miniture models" height="500" style="display:inline-block;">
+                    <h3> <a href="https://www.warhammer-community.com/2024/06/14/warhammer-age-of-sigmar-faction-focus-soulblight-gravelords/" target="_blank">Soulblight Gravelords</a><br></h3>
+                </div>
+
+                <div id="clear" style="clear:both;"></div>
+    </div><!--/#gallery-->
            
             
     </div>
 
-    <div id="footer">
+    <div id="footer" style ="border:none;">
         <br>
         <h3> <a href="../w2-bio/index.html"><i>Back to Top</i></a></h3>
         <p>&copy; 2024 | Jake | SE111 [202440]</p><br>
