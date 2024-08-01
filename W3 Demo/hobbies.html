@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jake" >
+    <meta name="description" content="W3 Demo " >
+
+
+    <title>Hobbies Demo</title>
+
+    <!--in doc style tag-->
+    <style>
+        /*in here write CSS*/
+
+        div {
+            /*all div elements on THIS page will take the following styling*/
+            border:1px solid black;
+            padding:10px; /*adds space betwen element content and border*/
+            margin:10px;/*adds space between broder of element and next element*/
+        }
+
+        #wrapper{
+            width:980px;
+            margin:auto;/*must have a width setl center element w/ equal l & R space in page*/
+            background-color:darkgrey;
+        }
+
+        #nav{
+            background-color: white;
+        }
+
+        .bg{
+            background-color: black;
+            color: white;
+        }
+
+        .fancy{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+
+        <!--#header-->
+        <div id="header" class="bg">
+            <h1>W3 | Multipage Demo</h1>
+        </div><!--/#header-->
+
+        <!--#nav-->
+        <div id="nav">
+
+            <!--create a new div to hold the buttons; this div can later be centered in the nav-->
+            <div id="buttons">
+
+                <a href="index.html">ABOUT</a>
+                <a href="schools.html">SCHOOLS</a>
+                <a href="hobbies.html">HOBBIES</a>
+
+
+            </div><!--/#buttons-->
+
+
+
+        </div><!--/#nav-->
+
+        <!--#content: *this* pages main content; only part that changes from page to page once mainframe is built-->
+        <div id="content">
+
+            <h2 class="fancy">This is the <b>HOBBIES</b> page.</h2>
+
+        </div><!--/#content-->
+
+        <div id="footer" class="bg">
+            <p class="fancy">&copy; Jake | 2024 | SE111 [202440]</p><br>
+
+            <!--make sure to include a w3 validation screenshot for *this* page-->
+        </div>
+    </div>
+
+
+
+</body>
+</html>
