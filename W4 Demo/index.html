@@ -15,6 +15,35 @@
             padding:10px;
             margin:10px;
         }
+
+        #buttons {
+            border:none;
+            padding:none;
+            margin:none;
+            width: 670px;
+            /*to use margin-auto, you must first set a width*/
+            margin:auto;
+        }
+
+        .btn {
+            width:150px;
+            height:50px;
+            text-align: center;
+            /*match line-height to eight to center vertically*/
+            line-height:50px;
+            font-size: 24px;
+            float:left;
+            margin-right:15px;
+            text-decoration:none;
+        }
+        .btn:hover{
+            background-attachment:black;
+            color:white;
+        }
+
+        #header{
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -32,16 +61,17 @@
             <!--create a new div to hold the buttons; this div can later be centered in the nav-->
             <div id="buttons">
 
-                <a href="index.html">Home</a>
-                <a href="cast.html">Cast</a>
-                <a href="review.html">Review</a>
-                <a href="w3Check.html">W3C</a>
-               
-            
-
-
+                <a href="index.html" class="btn">Home</a>
+                <a href="cast.html" class="btn">Cast</a>
+                <a href="review.html" class="btn">Review</a>
+                <a href="w3Check.html" class="btn">W3C</a>
+    
             </div><!--/#buttons-->
-
+            <div class="clear"
+                style="clear:both;
+                border:none;padding:none;margin:none;">
+            </div>
+            
 
 
         </div><!--/#nav-->
@@ -53,11 +83,12 @@
         <div id="content">
             <h2>ALL ABOUT <em>Synecdoche New york</em></h2>
 
+            <!--poster image or similar-->
+            <img src="images/snePoster.jpg" alt="Promotional poster for the movie Synecdoche New York" width="500">
+
             <!--Brief Synopsis-->
             <p>This movie is great, more content here, this movie rocks. More, more, more. This will be 1-5 Sentences</p>
-            <!--poster image or similar-->
 
-            <img src="images/synecdoche-new-york-review-1108x0-c-default.jpg" width="500">
             <!--Movie info div w/ class="info"-->
             <div class="info" style="border:none;">
                 <p><b>Release Date:</b> October 2008</p>
