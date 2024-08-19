@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jake Platt">
+    <meta name="description" content="W6 Pay Calculator">
+    <title>Payment Calculator</title>
+</head>
+<body>
+    
+    
+    <!--Build your Table and Form here-->
+    <h1>Payment Calculator</h1>
+
+    <form method="GET" action="calc.html">
+       
+        <table>
+
+            <thead><!--column headers for table in form-->
+
+                <tr><!--new table row-->
+                    <!--leftside column-->
+                    <td><!--table data cell-->
+                        <h2><b>Labels</b></h2>
+                    </td>
+                    <!--Rightside column-->
+                    <td>
+                        <h2><b>Form Fields</b></h2>
+                    </td>
+
+                </tr>
+
+            </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>
+                            <label for="fName">Employee First Name</label>
+                        </td>
+
+                        <td>
+                            <input type="text" name="fName" id="fName" placeholder="First Name"><br>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="lName">Employee Last Name</label>
+                        </td>
+
+                        <td>
+                            <input type="text" name="lName" id="lName" placeholder="Last Name"><br>
+                        </td> 
+
+
+                    <tr>
+                        <td>
+                            <label for="hourRate">Hourly Pay</label>
+                        </td>
+
+                        <td>
+                            <input type="number" name="hourRate" id="hourRate" placeholder="Hourly Pay in USD$"><br>
+                        </td>
+                    </tr>   
+                    <tr>
+                        <td>
+                            <label for="hourWorked">Hours Worked</label>
+                        </td>
+
+                        <td>
+                            <input type="number" name="hourWorked" id="hourWorked" placeholder="Hours Worked"><br>
+                        </td>
+                    </tr>
+
+</body>
+</html>
