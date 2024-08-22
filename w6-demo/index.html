@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jake Platt">
+    <meta name="description" content="W6 JS Intro Demo">
+    <title>W6 | JS Intro</title>
+</head>
+<body>
+    
+    <!--Include some bit of HTML elementes when first getting stasrted-->
+    <h1>W6 | JS Intro</h1>
+
+    <!--show use of button element with onclick event-->
+    <button onclick="hello()">Say Hi :]</button>
+   <!--In Docuemnt JS element and end of HTML content, before the body close-->
+   <script>
+        //single line comment in JS
+        
+        //create some variables --> JS req DECLARATION -- Keyword 'var'
+        var num1 = 10
+        var num2 = 27
+
+        var sum = num1 + num2
+        //console.log() periods act as possessive appostrophies in english, the console's log - Used for development NOT for user
+        console.log(sum)
+        console.log("The sum of ",num1, "+", num2, "is", sum)
+        console.log(`The sum of ${num1} + ${num2} is ${sum.toFixed(2)}`)
+
+        //alert() allows for a pop-up in the browser page to display the data. 
+        //alert() --> output to user [print()]
+        alert(`Hello World\nThe sum is $${sum.toFixed(2)}`)
+        //must interact wiht above alert() before messiage is read + displayed to the console
+        console.log(`alert complete.`)
+
+        //prompt() allows for a popup with a text box for data input by user
+        //prompt() --> input to a user [input()]
+         var name = prompt(`Enter your name: `)
+        console.log(`prompt complete. ${name}`)
+
+        alert(`Hi there ${name}!`)
+
+        //-----------------------------------------------------------------------------------//
+
+        var hours = Number(prompt(`Enter your hours worked: `))
+        var gross = hours * 15
+        var taxA = gross *0.2
+        var net = gross - taxA
+        console.log(`${hours.toFixed(1)} * 15 = $${gross.toFixed(2)}`)
+
+        //Conditions in JavaScript
+
+        var num = Number(prompt(`Enter a number: `))
+
+        if (num % 2 === 0){
+            alert(`The number is EVEN!`)
+        }
+        else{
+            alert(`The number is ODD!`)
+        }
+
+        function hello(){
+            console.log(`button clicked!`)
+            alert(`Hello World!`)
+        }
+
+    
+
+   </script>
+</body>
+</html>
