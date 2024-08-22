@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Jake Platt">
+    <meta name="description" content="Jake's SE111 HomePage">
+
+
+    <title>Jake's SE111 Remote Repo Home </title>
+
+    <style>
+
+        .cool {
+            color: chartreuse;
+        }
+ 
+        /*in here write CSS*/
+
+        div {
+            /*all div elements on THIS page will take the following styling*/
+            border:1px solid black;
+            padding:10px; /*adds space betwen element content and border*/
+            margin:10px;/*adds space between broder of element and next element*/
+    
+        }
+
+        #wrapper{
+            width:980px;
+            margin:auto;/*must have a width setl center element w/ equal l & R space in page*/
+            background-color:darkgrey;
+        }
+
+        #nav{
+            background-color: white;
+        }
+
+        .bg{
+            background-color: black;
+            color: lightcoral
+        }
+
+        #buttons {
+            border:none;
+            padding:0px;
+            margin:0px;
+            width: 670px;
+            /*to use margin-auto, you must first set a width*/
+            margin:auto;
+            color: white;
+        }
+
+        .btn {
+            width:150px;
+            height:50px;
+            text-align: center;
+            /*match line-height to eight to center vertically*/
+            line-height:50px;
+            font-size: 24px;
+            float:left;
+            margin-right:15px;
+            text-decoration:none;
+        }
+        .btn:hover{
+            background-attachment:fixed;
+            color:white;
+        }
+
+        #header{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+
+        <!--#header-->
+        <div id="header" class="bg">
+            <h1>Jake Platt | <i>SE111 Remote Repo Home</i></h1>
+        </div><!--/#header-->
+
+        <div id="nav">
+
+            <!--create a new div to hold the buttons; this div can later be centered in the nav-->
+            <div id="buttons">
+
+                <a href="index.html" class="btn">Home</a>
+                <a href="https://github.com/JakeRyanPlatt/SE111_202440" class="btn">GitHub</a>
+                <a href="" class="btn">JavaScript</a>
+                <a href="https://validator.w3.org/" class="btn">W3C</a>
+    
+            </div><!--/#buttons-->
+            <div class="clear"
+                style="clear:both;
+                border:none;padding:0px;margin:0px;">
+            </div>
+
+        </div><!--/#nav-->
+
+        <div id="content">
+            <h2>Assignments By Week</h2>
+<hr>
+<ul>
+    <li><a href="/w1 first web/index.html" class="cool"> Week 1 First Web</a></li>
+    <li><a href="/w2-bio/index.html" class="cool">Week 2 Bio</a></li>
+    <li><a href="/W3 Multipage Bio/index.html" class="cool">Week 3 Mulitpage Bio</a></li>
+    <li><a href="/W4 Demo/index.html" class="cool">Week 4 Movie</a></li>
+    <li><a href="/w5_form_files/index.html" class="cool">Week 5 Tables/Forms</a></li>
+    <li><a href="/w6/index.html" class="cool">Week 6 Payment Calculator</a></li>
+</ul>
+
+        </div>
+
+        <div id="footer" class="bg">
+            <p>&copy; Jake | 2024 | SE111 [202440]</p><br>
+
+            <a href="#header">Jump to Top!</a><br>
+
+            <!--make sure to include a w3 validation screenshot for *this* page-->
+        </div>
+    
+</body>
+</html>
