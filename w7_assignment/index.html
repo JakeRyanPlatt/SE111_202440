@@ -43,7 +43,7 @@
                     <td></td>
 
                     <!-- give the button below (that is the only form element without a label) an id of "enter-button"-->
-                    <td><input type="button" id="#enter-button" value="Enter"></td>
+                    <td><input type="button" id="enter-button" value="Enter"></td>
 
                 </tr>
                 </tbody>
@@ -78,8 +78,8 @@
         {
             //get each *value* from the form elements (first name, last name, hours worked, hourly rate) and store them into vars
             
-            var fname = document.querySelector(`#first`).value
-            var lname = document.querySelector(`#last`).value
+            var fname = document.querySelector(`#fname`).value
+            var lname = document.querySelector(`#lname`).value
             var hours = Number(document.querySelector(`#hours`).value)
             var rate = Number(document.querySelector(`#rate`).value)
 
@@ -100,6 +100,7 @@
 
             //convert both hours and rate to Number() data types
             
+            //casted when assigned variable
 
 
             //NOTE: DO NOT MOVE ON UNTIL YOU ARE ABLE TO DISPLAY THE CORRECT VALUES! This is a practice in testing as you build! 
@@ -107,34 +108,39 @@
             //create gross, taxAmount, net variables and store corresponding data to them
             //use a tax percentage of 20% (.2)
             var gross = hours * rate
-            var taxAmount = taxAmount * 0.2
+            var taxAmount = gross * 0.2
             var net = gross-taxAmount
 
 
             //console.log() all three processed values, rounded to the second decimal place
-            console.log(gross.toFixed(2), taxAmount.toFixed(2), net.toFixed(2))
+            console.log(`$${gross.toFixed(2)}, $${taxAmount.toFixed(2)}, $${net.toFixed(2)}`)
 
 
             //create a new variable called 'finalMessage' that holds the literal string value of the following, each value on a new line (use <br>): full name, hours worked*, hourly rate*   *--> rounded to the second decimal place 
-            var finalMessage = `${full}<br>${hours}<br> ${rate}`
+            var finalMessage = `${full}<br>${hours.toFixed(2)}<br> ${rate.toFixed(2)}`
 
         
             //create a new var called 'info' and store the entire #info *HTML element* to it
 
+            var info = document.querySelector(`#info`)
 
-            //create a new var called 'num' and store the entire #check *HTML element* to it
+            //create a new var called 'check' and store the entire #check *HTML element* to it
             
+            var check = document.querySelector(`#check`)
 
             //edit the innerHTML of the #info element (now the 'info' js var) to hold the value of 'finalMessage'
 
-
+            info.innerHTML = finalMessage
 
             //edit the innerHTML of the #check element (now the 'check' js var) to hold a literal string with the following values: gross pay, tax amount, net pay. All three values should be rounded to the second decimal place.  Use <br> to break onto a new line for each value
 
+            check.innerHTML = `${gross.toFixed(2)}<br>${taxAmount.toFixed(2)}<br>${net.toFixed(2)}`
 
 
             //add a 'click' event listener to the #submit HTML element (HINT: this is the first step in the <script> )
             //when the #submit button is clicked, the submitNow function should run
+
+            document.querySelector(`#submit`).addEventListener(`click`, submitNow)
 
         
             function submitNow(e)
