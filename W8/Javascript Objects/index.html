@@ -39,6 +39,7 @@
 		var first = document.querySelector(`#first`)
 		var last = document.querySelector(`#last`)
 		var button = document.querySelector(`#button`)
+		var output = document.querySelector(`#output`)
 
 
 
@@ -51,7 +52,7 @@
 
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
-		button.addEventListener(`click`, calcAndDisplay())
+		button.addEventListener(`click`, calcAndDisplay)
 		/*-----------------------------------------------------
 		Will add objects into the people array. 
 		Then will bubble sort the array and print each person to the screen.
@@ -74,9 +75,9 @@
 			    //1. first: will be a string that uses the first Input's value
 				//2. last: will be a string that uses the last Input's value
 
-            var person = {
-				first: `${first}`,
-				last: `${last}`,
+            var person = { //associative array
+				first: `${first.value}`,
+				last: `${last.value}`,
             }//end of person object
 
 
@@ -116,20 +117,18 @@
 					//FIRST: Ivan
 					//LAST: Drago
 
-					output += key.toUpperCase() 
+					output += `<p>${key.toUpperCase()}:${people[i][key]}</p>` 
 
                 }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
-				document.querySelector(`#output`).innerHTML += `<hr>`
+				output += `<hr>`
 			
-
-
 			}//end of loop going through people array to edit 'output'
 
 				//log the output string
 				//replace the outputDiv's inner HTML with the output string
 				
-			document.querySelector(`#output`).innerHTML += first.value + " " + last.value
+			document.querySelector(`#output`).innerHTML = output
 
 
 		}
