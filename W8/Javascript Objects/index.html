@@ -45,9 +45,13 @@
 
 		//Make an array to store the people
 		var people = []
+		console.log(`Arrray: ${people}`) //entire collection of data is revealed
+		console.log(`Array: ${people.length}`)//see inherent value of a property of the array object; length # of items
+    	console.log(`Array: ${people[people.length -1]}`)//last person in the array
+
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
-		button.addEventListener(`click`, calcAndDisplay(event))
+		button.addEventListener(`click`, calcAndDisplay())
 		/*-----------------------------------------------------
 		Will add objects into the people array. 
 		Then will bubble sort the array and print each person to the screen.
@@ -71,8 +75,8 @@
 				//2. last: will be a string that uses the last Input's value
 
             var person = {
-				first:first.value,
-    			last:last.value,
+				first: `${first}`,
+				last: `${last}`,
             }//end of person object
 
 
@@ -97,16 +101,13 @@
 			}//end of bubble sort algorithm!
 
 			//console.log the people array to check that the people array is formatted correctly and is populated with the correct objects
-			console.log(people)
-			console.log(person)
-
+			console.log(`Array: ${people}`)
+			
 			//create a variable called 'output' that has an empty string value stored to 
-			var output = ""
+			var output = ``
 
 			//Loop through the objects in the people array
-			for(let i = 0; i < people.length; i++)
-            {
-
+			for(let i = 0; i < people.length; i++){
 				//Loop through each property in the object
 				for(key in people[i])
                 {
@@ -114,10 +115,8 @@
 					//Output will resemble:
 					//FIRST: Ivan
 					//LAST: Drago
-					console.log(key)
-					
+
 					output += key.toUpperCase() 
-					console.log(output)
 
                 }
                 //add a <hr> to the output at the end of this outter loop so a horizontal rule is displayed inbetween each person being displayed to the screen.
