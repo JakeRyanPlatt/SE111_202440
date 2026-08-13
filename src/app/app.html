@@ -1,0 +1,99 @@
+<main>
+  <div class="shell">
+    <section class="panel hero">
+      <div class="eyebrow">System Online</div>
+      <h1>Green <span class="highlight">Robot</span></h1>
+      <p class="subtitle">
+        Autonomous field support for clean energy monitoring, rapid diagnostics,
+        and responsive environmental scanning.
+      </p>
+
+      <div class="metrics" aria-label="robot metrics">
+        <div class="metric">
+          <strong>98%</strong>
+          <span>Power health</span>
+        </div>
+        <div class="metric">
+          <strong>24/7</strong>
+          <span>Cycle uptime</span>
+        </div>
+        <div class="metric">
+          <strong>12</strong>
+          <span>Active sensors</span>
+        </div>
+      </div>
+    </section>
+
+    <aside class="panel scene-panel">
+      <div class="robot-scene" aria-label="Green robot illustration">
+        <div class="robot" [class.robot-off]="!powered()">
+          <div class="robot-head">
+            <div class="antenna"></div>
+            <div class="eyes">
+              <div class="eye"></div>
+              <div class="eye"></div>
+            </div>
+            <div class="mouth"></div>
+          </div>
+
+          <div class="arms">
+            <div class="arm left"></div>
+            <div class="arm right"></div>
+          </div>
+
+          <div class="robot-body">
+            <div class="panel-light"></div>
+            <div class="battery">
+              <div class="battery-fill" [style.width.%]="batteryLevel()"></div>
+            </div>
+          </div>
+
+          <div class="legs">
+            <div class="leg"></div>
+            <div class="leg"></div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="panel status-card" aria-label="robot status panel">
+      <div class="card">
+        <h2>Status</h2>
+        <div class="status-readout">
+          <span
+            class="status-pill"
+            [style.color]="statusTone()"
+            [style.border-color]="statusTone() + '66'"
+            [style.background]="statusTone() + '1a'"
+          >
+            {{ statusLabel() }}
+          </span>
+          <span class="status-value">{{ batteryLevel() }}%</span>
+        </div>
+        <p class="status-message">{{ statusMessage() }}</p>
+      </div>
+
+      <div class="card">
+        <h2>Controls</h2>
+        <div class="controls">
+          <button id="power-btn" type="button" (click)="togglePower()">
+            {{ powered() ? 'Power Off' : 'Power On' }}
+          </button>
+          <button id="scan-btn" type="button" (click)="runScan()">Run Scan</button>
+          <button id="diag-btn" type="button" (click)="runDiagnostics()">
+            Diagnostics
+          </button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Capabilities</h2>
+        <ul class="feature-list">
+          <li>Autonomous route tracking</li>
+          <li>Environmental sensor checks</li>
+          <li>Remote diagnostics support</li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</main>
